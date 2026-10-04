@@ -2,11 +2,13 @@
 
 Kam Codes is my personal development playground — a place to learn by building, experiment with new ideas, and actually ship the things I create.
 
-🌐 **Live site:** kamcodes.com
+🌐 **Live site:** [kamcodes.com](https://kamcodes.com)
 
 ## What I'm Building
 
 ### 🛼 Skate Tracker
+
+🔗 **Live project:** [kamcodes.com/skate-tracker](https:/https://kamieliz.github.io/skate-tracker/)
 
 A roller skating practice tracker built to help me answer two questions:
 
