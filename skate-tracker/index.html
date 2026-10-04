@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skate Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <body>
+    <header>
+        <h1>🛼 Skate Tracker</h1>
+        <p>Track your practice. Build your skills.</p>
+    </header>
+
+    <main>
+        
+        <section class="card weekly-summary">
+            <div class="weekly-heading">
+                <h2>This Week</h2>
+            </div>
+
+            <div class="weekly-stats">
+                <div class="weekly-stat">
+                    <span id="weekly-session-count" class="stat-number">0</span>
+                    <span class="stat-label">Sessions</span>
+                </div>
+
+                <div class="weekly-stat">
+                    <span id="weekly-minutes" class="stat-number">0 MIN</span>
+                    <span class="stat-label">Skated</span>
+                </div>
+            </div>
+        </section>
+        <section class="card skills">
+            <h2>My Skills</h2>
+
+            
+            <div id="skill-list"></div>
+            <form id="skill-form">
+             <div class="form-field">
+                <label for="skill-name">Skill Name</label>
+                <input type="text" id="skill-name">
+                <label for="skill-level">Level</label>
+                <select id="skill-level">
+                    <option value="Beginner">Beginner</option>
+                    <option value="Intermediate">Intermediate</option>
+                    <option value="Advanced">Advanced</option>
+                </select>
+
+            </div>
+
+            <div class="form-field">
+                <label for="skill-status">Status</label>
+                <select id="skill-status">
+                    <option value="Learning">Learning</option>
+                    <option value="Developing">Developing</option>
+                    <option value="Consistent">Consistent</option>
+                    <option value="Mastered">Mastered</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="skill-confidence">Confidence</label>
+                <select id="skill-confidence">
+                    <option value="1">1 - Not confident</option>
+                    <option value="2">2 - A little confident</option>
+                    <option value="3">3 - Getting there</option>
+                    <option value="4">4 - Confident</option>
+                    <option value="5">5 - Very confident</option>
+                </select>
+
+            </div>
+
+                <div class="form-actions">
+                    <button type="submit" id="skill-submit">Add Skill</button>
+                    <button type="button" id="cancel-skill">Cancel</button>
+                </div>
+            </form>
+
+            <button type="button" id="show-skill-form">+ Add Skill</button>
+        </section>
+        
+
+        <section class="card practice">
+            <h2>Today's Practice</h2>
+
+            <p id="practice-status">Ready to skate?</p>
+
+            <div id="practice-recommendations"></div>
+
+             <button id="start-practice">Start Practice</button>
+
+        </section>
+        <section class="card sessions">
+         <h2>Recent Sessions</h2>
+         <div id="session-list"></div>
+            <button type="button" id="show-session-form">+ Log Session</button>
+
+            <form id="session-form">
+
+                <div class="form-field">
+                <label for="session-date">Date</label>
+                <input type="date" id="session-date" required>
+                </div>
+
+                <div class="form-field">
+                <label for="session-type">Practice Type</label>
+                <select id="session-type">
+                    <option value="Skate Class">Skate Class</option>
+                    <option value="Roller Rink">Roller Rink</option>
+                    <option value="Home Practice">Home Practice</option>
+                    <option value="Outdoor Practice">Outdoor Practice</option>
+                </select>
+                </div>
+
+                <div class="form-field">
+                <label for="session-duration">Duration</label>
+
+                <div class="duration-input">
+                <input type="number" id="session-duration" min="1" step="0.5" required>
+
+                <select id="duration-unit">
+                    <option value="minutes">Minutes</option>
+                    <option value="hours">Hours</option>
+                </select>
+                </div>
+            </div>
+
+            <div class="form-field">
+                <label for="session-skills">Skills Practiced</label>
+                <select id="session-skills" multiple></select>
+            </div>
+
+           <div class="form-field">
+                <label for="session-notes">Notes</label>
+                <textarea
+                    id="session-notes"
+                    rows="4"
+                    placeholder="How did practice go?"> 
+                </textarea>
+          </div>
+
+        <div class="form-actions">
+            <button type="submit">Save Session</button>
+            <button type="button" id="cancel-session">Cancel</button>
+        </div>
+
+        </form>
+         </div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</body>
+</html>
